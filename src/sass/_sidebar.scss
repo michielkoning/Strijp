@@ -31,9 +31,11 @@ aside {
 		color: #fff;
 	}
 	.image {
-		width: 150px;
+		width: 200px;
 		margin: 15px auto 0;
 		img {
+			width: 100%;
+			height: auto;
 			border-radius: 5px;
 		}
 	}

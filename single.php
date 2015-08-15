@@ -7,7 +7,7 @@
 		<article>
 			<?php the_content(); ?>
 
-			<div class="category">
+			<div class="meta">
 				Geplaatst in <?php the_category(', '); ?>
 			</div>
 		</article>
@@ -31,13 +31,13 @@
 			</div>
 
 			<div class="widget widget-author">
-				<div class="image"><?php echo get_avatar( get_the_author_meta( 'ID' ), '150' ); ?></div>
+				<div class="image"><?php echo get_wp_user_avatar( get_the_author_meta( 'ID' ), 'medium' ); ?></div>
 
 				<h2 class="author-heading"><?php printf( 'Door %s', get_the_author() ); ?></h2>
 				<p><?php echo get_the_author_meta( 'intro' ) ; ?></p>
 
 				<p class="contact-info">
-					<span class="glyphicon glyphicon-mail"></span><a class="email" href="mailto:<?php the_author_meta( 'email' ); ?>"><?php the_author_meta( 'email' ); ?></a>
+					<span class="glyphicon glyphicon-mail"></span><a href="mailto:<?php echo esc_attr( get_the_author_meta( 'email', $user->ID ) ); ?>"><?php echo esc_attr( get_the_author_meta( 'email', $user->ID ) ); ?></a><br>
 				</p>
 				<a class="btn" href="<?php echo site_url(); ?>/advocaten#<?php echo get_the_author_meta( 'nicename' ); ?>">
 					<?php printf( 'Lees meer over %s', get_the_author() ); ?>

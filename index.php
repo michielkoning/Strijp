@@ -10,16 +10,7 @@
 	</div>
 	<aside>
 
-		<div class="widget widget-categories">
-			<div class="widget-content">
-				<h3>Onze categori&euml;n:</h3>
-				<ul>
-					<?php wp_list_categories(array(
-						'title_li' => ''
-					)); ?>
-				</ul>
-			</div>
-		</div>
+		<?php get_template_part( 'partials/widget-categories' ); ?>
 
 	</aside>
 </div>
