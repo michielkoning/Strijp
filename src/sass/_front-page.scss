@@ -1,3 +1,7 @@
+.front-page {
+	padding-bottom: $page-padding-bottom;
+}
+
 .lead {
 	position: relative;
 	padding-right: 360px;
@@ -17,4 +21,5 @@
 
 .slogan {
 	font-size: 22px;
+	margin-bottom: 25px;
 }

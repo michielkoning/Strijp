@@ -61,7 +61,7 @@ $document.ready(function(){
 		}
 	});
 
-	$('input[required], textarea[required]').keyup(function(){
+	$('input[required], textarea[required]').blur(function(){
 		validateInput($(this));
 	});
 });

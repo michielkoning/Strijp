@@ -32,10 +32,10 @@
 				5657 EE Eindhoven<br>
 				KVK nr. 59036168
 			</p>
-			<p>
-				infot@strijpadvocatuur.nl<br>
-				040 251 60 30<br>
-				040 251 80 91
+			<p class="contact-info">
+				<span class="glyphicon glyphicon-mail"></span><a href="mailto:info@strijpadvocatuur.nl">info@strijpadvocatuur.nl</a><br>
+				<span class="glyphicon glyphicon-phone"></span><a href="tel:040 251 60 30">040 251 60 30</a><br>
+				<span class="glyphicon glyphicon-fax"></span>040 251 80 91
 			</p>
 			<a href="https://maps.google.com?daddr=Freddy+van+Riemsdijkweg+4+Eindhoven" title="Routebeschrijving" class="btn" target="_blank">Routebeschrijving</a>
 			<div class="follow-us">

@@ -30,6 +30,7 @@
 
 		<?php else : ?>
 
-			<p>Er zijn geen publicaties gevonden,</p>
+			<p>Er zijn geen publicaties gevonden op deze pagina.</p>
+			<a href="<?php echo home_url(); ?>/publicaties" class="btn" title="Alle publicaties">Terug naar alle publicaties</a>
 
 		<?php endif; ?>

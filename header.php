@@ -46,6 +46,11 @@
 		<?php $page_for_posts_id = get_option('page_for_posts'); ?>
 		<?php $thumbnail = get_mood_image( $page_for_posts_id ); ?>
 		<?php $subtitle = get_field('subtitle', $page_for_posts_id); ?>
+
+	<?php elseif (is_404()) : ?>
+
+			<?php $thumbnail = get_mood_image( ); ?>
+
 	<?php else : ?>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

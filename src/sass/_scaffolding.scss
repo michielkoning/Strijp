@@ -74,9 +74,14 @@ img {
   padding-top: $grid-gutter-width / 2;
   padding-left: $grid-gutter-width;
   padding-right: $grid-gutter-width;
-  padding-bottom: $grid-gutter-width * 2;
   @media (max-width: $screen-xs-max) {
     padding-left: $grid-gutter-width / 2;
     padding-right: $grid-gutter-width / 2;
+  }
+}
+
+.contact-info {
+  .glyphicon {
+    width: 25px;
   }
 }

@@ -19,6 +19,9 @@ footer {
 	ul {
 		@include list-unstyled;
 	}
+	.contact-info a {
+		color: #fff;
+	}
 }
 
 .footer-col {

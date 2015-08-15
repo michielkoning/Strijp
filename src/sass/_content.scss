@@ -1,6 +1,15 @@
 .content {
 	@include clearfix();
 	margin: 0 -15px;
+	padding-bottom: $page-padding-bottom;
+}
+
+.contact-info a {
+	color: $text-color;
+}
+
+.articles {
+	padding-top: 15px;
 }
 
 .articles,
@@ -14,47 +23,12 @@ article {
 	}
 }
 
-aside {
-	padding: 30px 15px 0;
+.contact-col {
 	float: left;
-	width: 33.33333%;
+	width: 50%;
 	@media (max-width: $screen-sm-max) {
-		padding-top: 0;
 		width: auto;
 		float: none;
-	}
-}
-
-.widget {
-	@include clearfix();
-	margin-bottom: 30px;
-	border-radius: 10px;
-	background: $gray-light;
-	padding: 0 15px 15px;
-	ul {
-		@include list-unstyled();
-	}
-	li {
-		margin-bottom: 3px;
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-	a {
-		color: $text-color;
-	}
-	.btn {
-		color: #fff;
-	}
-}
-
-.widget-share {
-	a {
-		display: inline-block;
-		margin-right: 5px;
-	}
-	img {
-		width: 40px;
 	}
 }
 
@@ -70,6 +44,15 @@ aside {
 		width: 100%;
 		height: 100%;
 	}
+}
+
+iframe {
+	border: 0;
+}
+
+.maps {
+	width: 100%;
+	margin-top: 15px;
 }
 
 .navigation {
@@ -88,3 +71,8 @@ aside {
 	float: right;
 }
 
+.category {
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid $gray-light;
+}
