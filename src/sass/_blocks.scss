@@ -16,10 +16,10 @@
 	background: $gray-light;
 	width: calc(50% - 30px);
 	@media (max-width: $screen-sm-max) {
-		width: calc(50% - 30px);
+		width: calc(50% - 30px) !important;
 	}
 	@media (max-width: $screen-xs-max) {
-		width: calc(100% - 30px);
+		width: calc(100% - 30px) !important;
 	}
 	.text {
 		padding: 0 15px 15px;
