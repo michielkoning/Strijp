@@ -38,10 +38,10 @@
 				<span class="glyphicon glyphicon-fax"></span>040 251 80 91
 			</p>
 			<a href="https://maps.google.com?daddr=Freddy+van+Riemsdijkweg+4+Eindhoven" title="Routebeschrijving" class="btn" target="_blank">Routebeschrijving</a>
-			<div class="follow-us">
+			<!-- div class="follow-us">
 				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt=""></a>
 				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt=""></a>
-			</div>
+			</div-->
 
 		</div>
 		<div class="footer-col">

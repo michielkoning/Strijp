@@ -1,6 +1,8 @@
 .btn {
   @include button-size(2px, 10px);
   @include button-variant($text-color, transparent, $text-color);
+  padding-top: 3px; //HIND HACK
+  padding-bottom: 1px; //HIND HACK
   border-radius: 5px;
   background: $brand-primary;
   text-decoration: none;

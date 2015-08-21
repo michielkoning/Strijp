@@ -18,7 +18,9 @@ body {
 	line-height: $line-height;
 	font-weight: $font-weight;
   background: $gray-light;
-  hyphens: auto;
+  @media (max-width: $screen-xs-max) {
+    hyphens: auto;
+  }
 }
 
 // Reset fonts for relevant elements
