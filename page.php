@@ -57,7 +57,7 @@
 
 					$more_posts = new WP_Query(array(
 						'orderby'       =>  'post_date',
-						'order'         =>  'ASC',
+						'order'         =>  'DESC',
 						'posts_per_page' => 5
 					));
 				?>
