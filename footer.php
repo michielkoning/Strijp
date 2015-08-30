@@ -49,6 +49,7 @@
 			<div class="partners">
 				<a href="https://www.advocatenorde.nl/" class="partner-advocatenorde" target="_blank" title="Nederlandse orde van advocaten"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-orde-van-advocaten.png" alt="Nederlandse orde van advocaten"></a>
 				<a href="http://www.rvr.org/" class="partner-rvr" target="_blank" title="Raad van Rechtsbijstand"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-rvr.png" alt="Raad van Rechtsbijstand"></a>
+				<a href="https://www.juridischloket.nl/" class="partner-juridisch-loket" target="_blank" title="Het juridisch loket"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-juridisch-loket.png" alt="Het juridisch loket"></a>
 			</div>
 		</div>
 
@@ -56,14 +57,22 @@
 	</footer>
 </div>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <script>
 	var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
 </script>
-
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/functions.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21327909-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 <?php wp_footer(); ?>
 

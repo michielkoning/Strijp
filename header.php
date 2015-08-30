@@ -44,7 +44,6 @@
 	</header>
 
 	<?php if (is_home()) : ?>
-
 		<?php $page_for_posts_id = get_option('page_for_posts'); ?>
 		<?php $thumbnail = get_mood_image( $page_for_posts_id ); ?>
 		<?php $subtitle = get_field('subtitle', $page_for_posts_id); ?>
@@ -66,9 +65,9 @@
 
 	<div class="mood" style="background-image: url('<?php echo $thumbnail; ?>');">
 
-		<?php if (get_field('subtitle')) : ?>
+		<?php if ($subtitle) : ?>
 
-			<div class="mood-title"><?php the_field('subtitle'); ?></div>
+			<div class="mood-title"><?php echo $subtitle; ?></div>
 
 		<?php endif; ?>
 		<?php if (is_front_page() || get_post_ancestors( $post->ID )[0] == EXPERTISE_ID || get_the_ID() == EXPERTISE_ID) : ?>

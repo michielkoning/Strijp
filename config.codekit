@@ -76,24 +76,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/image1.jpg": {
-		"fileType": 16384,
+	"\/images\/logo-juridisch-loket.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3.41785e+06,
-		"inputAbbreviatedPath": "\/images\/image1.jpg",
-		"outputAbbreviatedPath": "\/images\/image1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/image2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7.12305e+06,
-		"inputAbbreviatedPath": "\/images\/image2.jpg",
-		"outputAbbreviatedPath": "\/images\/image2.jpg",
+		"initialSize": 15733,
+		"inputAbbreviatedPath": "\/images\/logo-juridisch-loket.png",
+		"outputAbbreviatedPath": "\/images\/logo-juridisch-loket.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
