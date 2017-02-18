@@ -57,13 +57,11 @@
 	</footer>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 	var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
 </script>
-<script src="<?php echo get_template_directory_uri(); ?>/scripts/functions.js"></script>
 
-<script type="text/javascript">
+<script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-21327909-5']);
   _gaq.push(['_trackPageview']);

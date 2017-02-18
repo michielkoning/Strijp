@@ -13,6 +13,25 @@ register_nav_menus(array(
 
 const EXPERTISE_ID = 8;
 
+function add_scripts() {
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+    wp_register_script( 'strijp_functions', get_template_directory_uri() . '/scripts/functions.js', false, NULL, true );
+
+    wp_enqueue_script( array('jquery', 'strijp_functions'));
+}
+add_action( 'wp_enqueue_scripts', 'add_scripts' );
+
+function add_styles() {
+    wp_register_style('strijp', get_template_directory_uri() . '/css/style.css', false, "4");
+    wp_register_style('font-hind', 'http://fonts.googleapis.com/css?family=Hind:400,700');
+
+    wp_enqueue_style('strijp');
+    wp_enqueue_style('font-hind');
+}
+add_action( 'wp_enqueue_scripts', 'add_styles' );
+
+
 function get_mood_image($post_ID = null) {
 	if (has_post_thumbnail($post_ID)) {
 		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post_ID), 'large' );
